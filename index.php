@@ -57,7 +57,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet" /> -->
     <link href="css/font-awesome.min.css" rel="stylesheet" />
     <link href="css/contact.css" rel="stylesheet" />
 </head>
@@ -65,10 +66,7 @@
 <body>
     <!-- Satrt Form -->
     <div class="container mt-3">
-
-
     </div>
-
     <form class="contact-form" action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
         <h1 class="text-center">Contact Me</h1>
         <?php
@@ -93,8 +91,6 @@
         <?php
         }
         ?>
-
-
         <div class="form-group">
             <input class="username form-control" type="text" name="username" placeholder="Type Your Username" value="<?php if (isset($user)) {
                                                                                                                             echo $user;
@@ -134,14 +130,13 @@
             <i class="fa fa-send fa-fw send-icone"></i>
         </div>
     </form>
-
     <!-- End Form -->
 
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-3.6.1.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
     <script src="js/custom.js"></script>
 </body>
 
